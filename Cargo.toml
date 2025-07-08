@@ -1,0 +1,21 @@
+[package]
+name = "decide-rs"
+description = "Decide which one to choose"
+authors = ["yy-tromb"]
+license = "MIT"
+version = "0.0.1"
+edition = "2024"
+
+[dependencies]
+getrandom = "0.3.3"
+rand = "0.9.1"
+
+[profile.dev]
+opt-level = 0
+lto="off"
+strip = "none"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+strip="debuginfo"

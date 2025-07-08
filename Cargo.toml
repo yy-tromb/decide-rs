@@ -9,7 +9,7 @@ edition = "2024"
 [dependencies]
 clap = { version = "4.5.40", features = ["derive", "string", "unicode"] }
 getrandom = "0.3.3"
-rand = "0.9.1"
+rand = { version = "0.9.1" , features = ["thread_rng"] }
 
 [profile.dev]
 opt-level = 0

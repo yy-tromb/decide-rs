@@ -1,3 +1,7 @@
+use rand::Rng;
+
 fn main() {
-    println!("Hello, world!");
+    let mut rng = rand::rng();
+    let r1 : f64 = rng.random();
+    println!("{}",r1);
 }
